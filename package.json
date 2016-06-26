@@ -1,0 +1,45 @@
+{
+  "name": "rental",
+  "version": "1.0.0",
+  "description": "???",
+  "author": "Balazs Edes",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.21.0",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "@horizon/client": "^1.1.3",
+    "classnames": "^2.2.5",
+    "google-maps": "^3.2.1",
+    "jquery": "^3.0.0",
+    "jquery-ui": "^1.10.5",
+    "lodash": "^4.13.1",
+    "mobx": "^2.3.3",
+    "mobx-react": "^3.4.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.5.1",
+    "semantic-ui-api": "^2.1.7",
+    "semantic-ui-button": "^2.1.7",
+    "semantic-ui-card": "^2.1.7",
+    "semantic-ui-grid": "^2.1.7",
+    "semantic-ui-icon": "^2.1.7",
+    "semantic-ui-input": "^2.1.7",
+    "semantic-ui-menu": "^2.1.7",
+    "semantic-ui-search": "^2.1.7"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --progress --display-reasons --display-error-details --display-modules",
+    "watch": "webpack -w"
+  }
+}
