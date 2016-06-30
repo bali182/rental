@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import $ from 'jquery';
 import searchPlugin from 'semantic-ui-search';
 import apiPlugin from 'semantic-ui-api';
-import keys from '../../api-codes.json';
 
 import 'jquery-ui/effect';
 

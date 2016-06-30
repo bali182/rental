@@ -1,5 +1,4 @@
-.hz
-dist
-node_modules
+public
 rethinkdb_data
-api-codes.json
+config.json
+npm-debug.log
