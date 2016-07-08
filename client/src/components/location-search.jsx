@@ -5,7 +5,7 @@ import $ from 'jquery';
 import searchPlugin from 'semantic-ui-search';
 import apiPlugin from 'semantic-ui-api';
 
-import 'jquery-ui/effect';
+import 'jquery-ui/ui/effect';
 
 $.fn.search = searchPlugin;
 $.fn.api = apiPlugin;

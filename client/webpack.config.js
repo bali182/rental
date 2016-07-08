@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './main.jsx',
+  entry: './src/main.jsx',
   resolve: {
     extensions: ['', '.js', '.jsx', '.css']
   },
@@ -39,7 +39,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './index.html' }),
-    new ExtractTextPlugin("style.css")
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new ExtractTextPlugin("./src/style.css"),
+    new webpack.ProvidePlugin({
+      'jQuery': 'jquery',
+      'React': 'react',
+      '$': 'jquery',
+    })
   ]
 };

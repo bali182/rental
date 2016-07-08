@@ -1,5 +1,5 @@
 import Loader from 'google-maps';
-import keys from '../../config.json';
+import keys from '../../../config.json';
 
 export class GoogleServices {
   constructor() {
