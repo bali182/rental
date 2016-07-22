@@ -12,13 +12,17 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "font-loader": "^0.1.2",
     "html-webpack-plugin": "^2.21.0",
     "json-loader": "^0.5.4",
+    "node-sass": "^3.8.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   },
   "dependencies": {
+    "breakpoint-sass": "^2.7.0",
     "classnames": "^2.2.5",
+    "font-awesome": "^4.6.3",
     "google-maps": "^3.2.1",
     "jquery": "^3.0.0",
     "jquery-ui": "^1.12.0",
@@ -28,6 +32,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^2.5.1",
+    "sass-loader": "^4.0.0",
     "semantic-ui-api": "^2.1.7",
     "semantic-ui-button": "^2.1.7",
     "semantic-ui-card": "^2.1.7",
@@ -35,7 +40,8 @@
     "semantic-ui-icon": "^2.1.7",
     "semantic-ui-input": "^2.1.7",
     "semantic-ui-menu": "^2.1.7",
-    "semantic-ui-search": "^2.1.7"
+    "semantic-ui-search": "^2.1.7",
+    "susy": "^2.2.12"
   },
   "scripts": {
     "start": "webpack-dev-server --progress --display-reasons --display-error-details --display-modules",

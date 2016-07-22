@@ -1,0 +1,82 @@
+@import "~susy/sass/susy";
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import "../../style/globals";
+
+@mixin card-border-radius {
+  border-radius:4px;
+}
+
+.rent-card {
+  @include gallery(6 of 24);
+  margin-bottom: gutter(24);
+  height: 250px;
+  position: relative;
+  /* Visual settings */
+  box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
+  @include card-border-radius;
+  /* Background image settings */
+  
+  .image {
+    position: relative;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%;
+    @include card-border-radius;
+    &:hover {
+      .overlay {
+        @include card-border-radius;
+        transition: all .2s linear;
+        width:100%;
+        height:100%;
+        position:absolute;
+        background-color:#000;
+        opacity:0.2;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @mixin attachment($position) {
+    @include span(12 of 12);
+    @include card-border-radius;
+    position: absolute;
+    color:#fff;
+    clear: both;
+    text-shadow: 1px 1px 1px #666;
+    
+    @if $position == 'top' {
+      top: 0px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 90%);
+      padding: 10px 0px 20px 0px;
+    } @else {
+      bottom: 0px;
+      background: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 90%);
+      padding: 20px 0px 10px 0px;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .left {
+      margin: 0px 10px;
+      float:left;
+    }
+    
+    .right {
+      float:right;
+      margin: 0px 10px;
+    }
+  }
+
+  .top-attachment {
+    @include attachment(top)
+  }
+
+  .bottom-attachment {
+    @include attachment(bottom)
+  }
+}

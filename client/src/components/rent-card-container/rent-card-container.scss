@@ -1,0 +1,5 @@
+@import "~susy/sass/susy";
+
+.rent-card-container {
+  @include container(80%);
+}

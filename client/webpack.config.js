@@ -16,9 +16,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
+      /*{
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      },*/
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'style', // backup loader when not building .css file
+          'css!sass' // loaders to preprocess CSS
+        )
       },
       {
         test: /\.json$/,
@@ -40,7 +47,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new ExtractTextPlugin("./src/style.css"),
+    new ExtractTextPlugin("style.css"),
     new webpack.ProvidePlugin({
       'jQuery': 'jquery',
       'React': 'react',

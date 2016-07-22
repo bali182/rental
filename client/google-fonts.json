@@ -1,0 +1,22 @@
+{
+  "apiKey": "AIzaSyDh91fUpLSBYUxJTvrhLSdUL_b5dWf4h1A",
+  "output": "fonts",
+  "fonts": {
+    "Raleway": {
+      "variants": [
+        "300",
+        "300italic",
+        "700",
+        "700italic",
+        "italic",
+        "regular"
+      ],
+      "formats": [
+        "ttf",
+        "woff",
+        "eot",
+        "svg"
+      ]
+    }
+  }
+}
