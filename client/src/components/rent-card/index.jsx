@@ -12,11 +12,10 @@ export default class RentCard extends Component {
       <div className="image" style={style}>
         <div className="overlay"></div>
       </div>
-      <div className="top-attachment">
-        <span className="left"><h1><Icon icon={MAP_MARKER}/> Dublin 1, XY Street</h1></span>
-      </div>
+
       <div className="bottom-attachment">
-        <span className="right"><Icon icon={TAG}/> $1000 monthly</span>
+        <span className="left"><h1><Icon icon={MAP_MARKER}/> Dublin 1, XY Street</h1></span>
+        <span className="left"><Icon icon={TAG}/> $1000 monthly</span>
       </div>
     </div>
   }

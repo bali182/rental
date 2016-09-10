@@ -15,18 +15,18 @@
   box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5;
   @include card-border-radius;
   /* Background image settings */
-  
+
   .image {
     position: relative;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     @include card-border-radius;
     &:hover {
       .overlay {
         @include card-border-radius;
-        transition: all .2s linear;
+        transition: all 1s linear;
         width:100%;
         height:100%;
         position:absolute;
@@ -44,18 +44,20 @@
     color:#fff;
     clear: both;
     text-shadow: 1px 1px 1px #666;
-    
+
+    background: rgba(0, 0, 0, .4);
     @if $position == 'top' {
       top: 0px;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 90%);
-      padding: 10px 0px 20px 0px;
+      //background: linear-gradient(to bottom, rgba(0,0,0,0.50) 0%,rgba(0,0,0,0) 90%);
+      padding: 10px 0px 10px 0px;
     } @else {
       bottom: 0px;
-      background: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 90%);
-      padding: 20px 0px 10px 0px;
+      //background: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 90%);
+      padding: 10px 0px 10px 0px;
     }
 
     h1 {
+      font-weight: lighter;
       font-size: 1.2em;
       margin-top: 0px;
       margin-bottom: 0px;
@@ -65,7 +67,7 @@
       margin: 0px 10px;
       float:left;
     }
-    
+
     .right {
       float:right;
       margin: 0px 10px;
